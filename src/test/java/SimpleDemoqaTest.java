@@ -11,8 +11,13 @@ public class SimpleDemoqaTest {
        System.out.println("\n### Zapomni\n");
    }
 
+    @AfterAll
+    static void Agaponyal() {
+        System.out.println("\n### Kones\n");
+    }
+
     @BeforeEach
-    void Agaponyal(){
+    void Aaponyal(){
         System.out.println("### Nastroika");
         result = 3;
     }
