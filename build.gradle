@@ -1,6 +1,5 @@
 plugins {
     id 'java-library' // Подключение плагина для работы с Java библиотеками
-    id "io.qameta.allure" version "2.11.2" // Подключение плагина для интеграции с Allure
 }
 
 repositories {
@@ -8,5 +7,12 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'com.codeborne:selenide:7.13.0'
+    testImplementation (
+            "com.codeborne:selenide:7.13.0",
+            "org.junit.jupiter:junit-jupiter:5.10.0"
+    )
+}
+
+test {
+    useJUnitPlatform()
 }
