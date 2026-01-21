@@ -1,0 +1,12 @@
+plugins {
+    id 'java-library' // Подключение плагина для работы с Java библиотеками
+    id "io.qameta.allure" version "2.11.2" // Подключение плагина для интеграции с Allure
+}
+
+repositories {
+    mavenCentral() // Указание репозитория Maven Central для получения зависимостей
+}
+
+dependencies {
+    testImplementation 'com.codeborne:selenide:7.13.0'
+}
