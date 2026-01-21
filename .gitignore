@@ -1,3 +1,20 @@
+HELP.md
+build/
+!**/src/main/**
+!**/src/test/**
+
+# IDEA #
+.idea
+*.iws
+*.inl
+*.ipr
+
+# Allure #
+.allure
+
+# Gradle #
+.gradle
+
 # Compiled class file
 *.class
 
